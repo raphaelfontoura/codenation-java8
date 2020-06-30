@@ -44,9 +44,7 @@ public class CalculadorDeClasses implements Calculavel {
 	
 	@Override
 	public BigDecimal totalizar(Object obj) {
-//		if (obj.getClass().getDeclaredAnnotations().length == 0) {
-//			return BigDecimal.ZERO;
-//		}
+
 		BigDecimal valor = somar(obj).subtract(subtrair(obj));
 		return valor;
 	}
